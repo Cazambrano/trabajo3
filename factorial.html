@@ -1,0 +1,61 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>factorial</title>
+</head>
+<body>
+
+
+
+
+
+</body>
+
+<script type="text/javascript">
+<!-- -->
+window.addEventListener('load',menorNum,false);
+var total=1;
+var numero=5;
+
+function factorial(){
+
+	for (var i = 1 ; i <= numero; i++) {
+		total = i * total;			
+		}
+		console.log ("el total es  " , total);
+	}
+
+function array(){
+	var arreglo = [5,2,3,5,5,2,5,7,5,1,2];
+	var suma=0;
+	for (var i = 0 ; i < arreglo.length; i++) {
+		suma = suma + arreglo[i];
+	}
+	 console.log("la suma es:" , suma);
+} 
+
+function multiplicar(){
+	var vector =[5,2,3,9,4];
+	var total=1;
+	for (var i = 0 ; i <vector.length; i++) {
+		total= total * vector[i];
+	}
+	console.log("total de la multiplicacion es:", total);
+}
+
+function menorNum(){
+	var vector =[5,2,1,9,4];
+	var resultado = vector[0];
+
+	for (var i = 0; i < vector.length; i++) {
+		if (vector[i] < resultado) {
+			resultado= vector[i];	
+		}
+	}
+	console.log( "el numero menor del vector es:", resultado);
+}
+
+</script>
+
+
+</html>
